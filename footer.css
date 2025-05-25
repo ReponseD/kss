@@ -1,0 +1,21 @@
+/* footer.css */
+
+/* Footer Styles */
+footer {
+    background-color: #343a40; /* Dark background */
+    color: white; /* White text */
+    padding: 1rem 0; /* Vertical padding */
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
+}
+
+footer .btn {
+    margin: 0 0.5rem; /* Horizontal spacing between buttons */
+}
+
+footer .d-flex {
+    display: flex; /* Flex display for button alignment */
+    justify-content: center; /* Center the buttons */
+}

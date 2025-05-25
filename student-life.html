@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Life - Kagarama Secondary School</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .card {
+            margin-bottom: 30px; /* Space between cards */
+        }
+        .newsletter {
+            background-color: #f8f9fa; /* Light background for contrast */
+            padding: 20px;
+            margin: 40px 0;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .newsletter h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333; /* Dark text color */
+        }
+        .newsletter p {
+            font-size: 16px;
+            color: #666; /* Gray text color */
+            margin-bottom: 20px;
+        }
+        #newsletter-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #newsletter-form input[type="email"] {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc; /* Light gray border */
+            border-radius: 5px;
+            margin-right: 10px;
+            width: 250px; /* Width of the input */
+        }
+        #newsletter-form button {
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: #007bff; /* Bootstrap primary color */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        #newsletter-form button:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="parallax-bg">
+        <!-- Common Header -->
+        <header>
+            <div class="container">
+                <h1>Kagarama Secondary School</h1>
+                <nav>
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="academics.html">Academics</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="student-life.html">Student Life</a></li>
+                        <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
+                        <li class="nav-item"><a class="nav-link" href="faculty-staff.html">Faculty & Staff</a></li>
+                        <li class="nav-item"><a class="nav-link" href="news-events.html">News & Events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="dashbar"></div> <!-- Dashbar added here -->
+        </header>
+
+        <main>
+            <section id="student-life">
+                <div class="container">
+                    <div class="hero-image">
+                        <img src="https://via.placeholder.com/1200x600" alt="Students Engaging in Activities">
+                    </div>
+                    <h2 class="text-center">Thrive at Kagarama: A Vibrant Community</h2>
+                    <p>Beyond the classroom, Kagarama Secondary School offers a dynamic and enriching student experience. We believe that a well-rounded education encompasses not just academics, but also personal growth, leadership development, and community involvement. Our vibrant community fosters a sense of belonging, creativity, and adventure, empowering students to explore their talents and passions outside the classroom.</p>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="https://via.placeholder.com/300x200" alt="Extracurricular Activities Image" class="card-img-top">
+                                <div class="card-body">
+                                    <h3 class="card-title">Extracurricular Opportunities</h3>
+                                    <p class="card-text">Discover your passions and develop your skills through our wide array of extracurricular activities. From sports teams and clubs to arts programs and community service initiatives, there's something for everyone at Kagarama. Whether you're a budding athlete, a creative artist, or a compassionate volunteer, you'll find opportunities to explore your interests and grow as an individual.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="https://via.placeholder.com/300x200" alt="Student Residence Image" class="card-img-top">
+                                <div class="card-body">
+                                    <h3 class="card-title">Comfortable and Supportive Living</h3>
+                                    <p class="card-text">Kagarama provides a comfortable and supportive living environment that fosters a sense of community and belonging. Our residential facilities are designed to meet the needs of our students, creating a safe and welcoming space where they can relax, study, and connect with their peers.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="https://via.placeholder.com/300x200" alt="Student Events Image" class="card-img-top">
+                                <div class="card-body">
+                                    <h3 class="card-title">Social Events and Gatherings</h3>
+                                    <p class="card-text">At Kagarama, we believe in fostering a vibrant social atmosphere where students can connect with their peers and create lasting memories. We host a variety of social events, from dances and movie nights to cultural celebrations and sporting competitions, providing students with opportunities to build friendships and celebrate their shared experiences.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="https://via.placeholder.com/300x200" alt="Leadership Development Image" class="card-img-top">
+                                <div class="card-body">
+                                    <h3 class="card-title">Leadership Development</h3>
+                                    <p class="card-text">We are committed to developing students into confident and responsible leaders. Through our student government, clubs, and service initiatives, students have opportunities to take on leadership roles, hone their skills, and make a positive impact on their community. Our goal is to equip our students with the skills and confidence they need to succeed as future leaders.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter Section -->
+                    <section id="newsletter" class="newsletter">
+                        <h3>Stay Updated!</h3>
+                        <p>Subscribe to our newsletter to receive the latest news, updates, and events happening at Kagarama Secondary School.</p>
+                        <form id="newsletter-form" action="path/to/your/newsletter_script.php" method="POST"> <!-- Update this path -->
+                            <input type="email" name="email" placeholder="Enter your email" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </section>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p class="text-center">© 2023 Kagarama Secondary School</p>
+                <div class="social-media text-center">
+                    <a href="#" class="facebook">Facebook</a>
+                    <a href="#" class="twitter">Twitter</a>
+                    <a href="#" class="instagram">Instagram</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

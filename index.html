@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kagarama Secondary School</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Chatbot Icon Styles */
+        #chatbot-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px; /* Adjust size as needed */
+            height: 60px; /* Adjust size as needed */
+            background-color: navy; /* Icon color */
+            color: white;
+            border-radius: 50%; /* Circular icon */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+            z-index: 1000; /* Ensure it appears above other content */
+        }
+
+        /* Chatbot Container Styles */
+        #chatbot-container {
+            position: fixed;
+            bottom: 80px; /* Position above the icon */
+            right: 20px;
+            width: 300px; /* Width of the chatbot */
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+            padding: 10px; /* Uniform padding */
+            font-family: 'Arial', sans-serif;
+            display: none; /* Initially hidden */
+            z-index: 1000; /* Ensure it appears above other content */
+        }
+
+        /* Chatbot Message Styles */
+        #messages {
+            max-height: 300px; /* Limit height */
+            overflow-y: auto; /* Scrollable messages */
+        }
+
+        .user {
+            color: blue; /* User message color */
+            text-align: right; /* Right alignment */
+        }
+
+        .bot {
+            color: green; /* Bot message color */
+            text-align: left; /* Left alignment */
+        }
+    </style>
+</head>
+<body>
+    <div class="parallax-bg">
+        <header>
+            <div class="container">
+                <h1>Kagarama Secondary School</h1>
+                <nav>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="student-life.html">Student Life</a></li>
+                        <li><a href="faculty-staff.html">Faculty & Staff</a></li>
+                        <li><a href="news-events.html">News & Events</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="dashbar"></div> <!-- Dashbar added here -->
+        </header>
+
+        <main>
+            <section id="hero">
+                <img src="Humura_Photography(10).jpg" alt="Hero Image">
+                <div class="hero-text">
+                    <h2>Welcome to Kagarama Secondary School</h2>
+                    <p>Discover your potential and reach new heights with us.</p>
+                </div>
+            </section>
+
+            <div class="grid-container">
+                <div class="half-container">
+                    <img src="https://via.placeholder.com/400x200" alt="About Us Image">
+                    <h2>About Us</h2>
+                    <p>Kagarama Secondary School is more than just a school; it's a vibrant community dedicated to fostering academic excellence, nurturing individual talents, and preparing students for a successful future. We believe in providing a holistic education that empowers students to become confident, responsible, and compassionate global citizens.</p>
+                </div>
+
+                <div class="half-container">
+                    <img src="https://via.placeholder.com/400x200" alt="Academics Image">
+                    <h2>Academics</h2>
+                    <p>At Kagarama, we offer a challenging and diverse curriculum designed to inspire intellectual curiosity and prepare students for the demands of the 21st century. From STEM subjects to the arts, we provide students with a wide range of opportunities to explore their interests and develop essential skills for success.</p>
+                </div>
+
+                <div class="half-container">
+                    <img src="https://via.placeholder.com/400x200" alt="Admissions Image">
+                    <h2>Admissions</h2>
+                    <p>Are you ready to embark on an educational journey that will transform your life? At Kagarama Secondary School, we believe in fostering a supportive and dynamic learning environment where students can thrive. Apply today and join our community of dedicated learners and passionate educators.</p>
+                </div>
+
+                <div class="half-container">
+                    <img src="https://via.placeholder.com/400x200" alt="Student Life Image">
+                    <h2>Student Life</h2>
+                    <p>At Kagarama, student life is a vibrant tapestry of extracurricular activities, social events, and opportunities for leadership development. From sports teams and clubs to student government and community service initiatives, there's something for everyone.</p>
+                </div>
+
+                <div class="half-container">
+                    <img src="https://via.placeholder.com/400x200" alt="Faculty Staff Image">
+                    <h2>Faculty & Staff</h2>
+                    <p>Our dedicated faculty and staff are committed to providing a high-quality educational experience that nurtures student growth and success. We are passionate educators who believe in the transformative power of education and strive to create a supportive and inspiring learning environment.</p>
+                </div>
+
+                <div class="half-container">
+                    <img src="https://via.placeholder.com/400x200" alt="News Events Image">
+                    <h2>News & Events</h2>
+                    <p>Stay up-to-date with the latest news and exciting events happening at Kagarama Secondary School. From academic achievements to sporting victories, we're celebrating the accomplishments of our students and faculty.</p>
+                </div>
+
+                <div class="half-container">
+                    <img src="https://via.placeholder.com/400x200" alt="Contact Us Image">
+                    <h2>Contact Us</h2>
+                    <p>We welcome your inquiries! Please don't hesitate to contact us with any questions you may have about Kagarama Secondary School. We're happy to help you learn more about our school and its programs.</p>
+                </div>
+            </div>
+
+            <section id="dashboard">
+                <h2>Dashboard</h2>
+                <div class="grid-container">
+                    <div class="dashboard-item">
+                        <h3>Recent Announcements</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Important Announcement Regarding School Calendar Changes</a>
+                                <p><em>Posted on 2023-11-15</em></p>
+                            </li>
+                            <li>
+                                <a href="#">New Scholarship Opportunities for Students</a>
+                                <p><em>Posted on 2023-11-08</em></p>
+                            </li>
+                            <li>
+                                <a href="#">Upcoming School Events and Activities</a>
+                                <p><em>Posted on 2023-11-01</em></p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="dashboard-item">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="academics.html">Academics</a></li>
+                            <li><a href="admissions.html">Admissions</a></li>
+                            <li><a href="student-life.html">Student Life</a></li>
+                            <li><a href="faculty-staff.html">Faculty & Staff</a></li>
+                            <li><a href="news-events.html">News & Events</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="dashboard-item">
+                        <h3>Faculty & Staff Directory</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Mr. John Doe</a>
+                                <p>Head of Department, Mathematics</p>
+                            </li>
+                            <li>
+                                <a href="#">Ms. Jane Doe</a>
+                                <p>English Teacher</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="subscribe">
+                <div class="container">
+                    <h2>Stay Connected</h2>
+                    <p>Subscribe to our newsletter to receive the latest news, updates, and events from Kagarama Secondary School.</p>
+                    <form>
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p>© 2023 Kagarama Secondary School</p>
+                <div class="social-media">
+                    <a href="#" class="facebook">Facebook</a>
+                    <a href="#" class="twitter">Twitter</a>
+                    <a href="#" class="instagram">Instagram</a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Chatbot Icon -->
+        <div id="chatbot-icon" onclick="toggleChatbot()">💬</div>
+
+        <!-- Chatbot Container -->
+        <div id="chatbot-container">
+            <iframe src="https://bot.orimon.ai/?tenantId=6381f6fe-8f2e-4dc9-9c9a-05ea5550f95b&fullScreenBot=true" 
+                    height="100%" 
+                    width="100%" 
+                    frameBorder="0" 
+                    border="none"></iframe>
+        </div>
+    </div>
+
+    <script>
+        function toggleChatbot() {
+            const chatbotContainer = document.getElementById('chatbot-container');
+            if (chatbotContainer.style.display === 'none' || chatbotContainer.style.display === '') {
+                chatbotContainer.style.display = 'block';
+            } else {
+                chatbotContainer.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

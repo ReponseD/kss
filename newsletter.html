@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Events - Kagarama Secondary School</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .hero-section {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .hero-image {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+        }
+        .hero-text-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+        .news-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .news-item {
+            flex: 0 1 calc(33% - 20px);
+            margin: 10px;
+            background: #f8f9fa;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            padding: 15px;
+            text-align: center;
+        }
+        .news-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .dashboard-grid {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        .dashboard-item {
+            flex: 1;
+            margin: 10px;
+            padding: 15px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            background-color: #f8f9fa;
+        }
+        header, footer {
+            background-color: navy; /* Set header and footer background to navy blue */
+            color: white; /* Set text color to white for contrast */
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+        nav ul li a {
+            color: white; /* Set link color to white */
+            text-decoration: none;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parallax-bg">
+        <!-- Header: Consistent across all pages -->
+        <header>
+            <div class="container">
+                <h1>Kagarama Secondary School</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="student-life.html">Student Life</a></li>
+                        <li><a href="faculty-staff.html">Faculty & Staff</a></li>
+                        <li><a href="news-events.html">News & Events</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="dashbar"></div>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section id="hero" class="hero-section">
+                <img src="https://via.placeholder.com/1920x600" alt="Hero Image" class="hero-image">
+                <div class="hero-text-container">
+                    <h2>Welcome to Kagarama Secondary School</h2>
+                    <p>Stay updated with the latest news and events happening at our school.</p>
+                </div>
+            </section>
+
+            <div class="container">
+                <!-- News Section -->
+                <section id="news" class="section-news my-5">
+                    <h2 class="section-title text-center">Latest News</h2>
+                    <div class="news-grid">
+                        <div class="news-item">
+                            <img src="https://via.placeholder.com/400x200" alt="News Image" class="news-image">
+                            <h3>New Academic Year Begins</h3>
+                            <p>We are excited to welcome back all our students for the new academic year! Classes will resume on September 10th.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                        <div class="news-item">
+                            <img src="https://via.placeholder.com/400x200" alt="News Image" class="news-image">
+                            <h3>School Sports Day Announced</h3>
+                            <p>Join us on October 15th for our annual Sports Day. Exciting competitions and fun activities await!</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                        <div class="news-item">
+                            <img src="https://via.placeholder.com/400x200" alt="News Image" class="news-image">
+                            <h3>Community Service Initiative</h3>
+                            <p>We are launching a community service initiative to encourage student involvement in local projects. Sign up today!</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Calendar Section -->
+                <section id="calendar" class="calendar-section my-5">
+                    <h2 class="section-title text-center">Upcoming Events</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item"><strong>September 10:</strong> First Day of School</li>
+                        <li class="list-group-item"><strong>October 15:</strong> Sports Day</li>
+                        <li class="list-group-item"><strong>November 5:</strong> Parent-Teacher Conferences</li>
+                    </ul>
+                </section>
+
+                <!-- Dashboard Section -->
+                <section id="dashboard" class="section-dashboard my-5">
+                    <h2 class="section-title text-center">Dashboard</h2>
+                    <div class="dashboard-grid">
+                        <div class="dashboard-item">
+                            <h3>Recent Announcements</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Important Announcement Regarding School Calendar Changes</a>
+                                    <p><em>Posted on 2023-11-15</em></p>
+                                </li>
+                                <li>
+                                    <a href="#">New Scholarship Opportunities for Students</a>
+                                    <p><em>Posted on 2023-11-08</em></p>
+                                </li>
+                                <li>
+                                    <a href="#">Upcoming School Events and Activities</a>
+                                    <p><em>Posted on 2023-11-01</em></p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="dashboard-item">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Academics</a></li>
+                                <li><a href="#">Admissions</a></li>
+                                <li><a href="#">Student Life</a></li>
+                                <li><a href="#">Faculty & Staff</a></li>
+                                <li><a href="#">News & Events</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="dashboard-item">
+                            <h3>Faculty & Staff Directory</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Mr. John Doe</a>
+                                    <p>Head of Department, Mathematics</p>
+                                </li>
+                                <li>
+                                    <a href="#">Ms. Jane Doe</a>
+                                    <p>English Teacher</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Dynamic Newsletter Section -->
+                <section id="newsletter" class="newsletter-section my-5">
+                    <h2 class="text-center">Newsletter</h2>
+                    <div class="text-center">
+                        <p>Stay updated with our newsletters! Subscribe below:</p>
+                        <form>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Enter your email" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Footer: Consistent across all pages -->
+        <footer>
+            <div class="container">
+                <p>© 2023 Kagarama Secondary School</p>
+                <div class="social-media">
+                    <a href="#" class="facebook">Facebook</a>
+                    <a href="#" class="twitter">Twitter</a>
+                    <a href="#" class="instagram">Instagram</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

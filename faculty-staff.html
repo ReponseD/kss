@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty & Staff - Kagarama Secondary School</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .headmaster-profile {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .deans-container {
+            display: flex;
+            flex-wrap: wrap; /* Allows wrapping for smaller screens */
+            justify-content: space-around; /* Even spacing between the profiles */
+            margin: 20px 0;
+        }
+        .dean-profile {
+            text-align: center;
+            flex: 1 1 30%; /* Flex-grow, flex-shrink, and flex-basis for responsive sizing */
+            margin: 10px; /* Adds margin between the profiles */
+        }
+        .dean-profile img {
+            width: 100%; /* Adjusts the width to 100% of the flex container */
+            height: auto; /* Maintains aspect ratio */
+            max-width: 300px; /* Ensures images do not exceed this width */
+            border-radius: 5px; /* Adds slight rounding to images */
+        }
+        .group-photo {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .newsletter {
+            background-color: #f8f9fa; /* Light background for contrast */
+            padding: 20px;
+            margin: 40px 0;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .newsletter h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333; /* Dark text color */
+        }
+        .newsletter p {
+            font-size: 16px;
+            color: #666; /* Gray text color */
+            margin-bottom: 20px;
+        }
+        #newsletter-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #newsletter-form input[type="email"] {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc; /* Light gray border */
+            border-radius: 5px;
+            margin-right: 10px;
+            width: 250px; /* Width of the input */
+        }
+        #newsletter-form button {
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: #007bff; /* Bootstrap primary color */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        #newsletter-form button:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="parallax-bg">
+        <!-- Common Header -->
+        <header>
+            <div class="container">
+                <h1>Kagarama Secondary School</h1>
+                <nav>
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="academics.html">Academics</a></li>
+                        <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
+                        <li class="nav-item"><a class="nav-link" href="student-life.html">Student Life</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="faculty-staff.html">Faculty & Staff</a></li>
+                        <li class="nav-item"><a class="nav-link" href="news-events.html">News & Events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="dashbar"></div> <!-- Dashbar added here -->
+        </header>
+
+        <main>
+            <section id="faculty-staff">
+                <div class="container">
+                    <div class="hero-image">
+                        <img src="https://via.placeholder.com/1200x600" alt="Group of Teachers and Staff">
+                    </div>
+                    
+                    <h2 class="text-center">Our Dedicated Team</h2>
+                    <p>Kagarama Secondary School is fortunate to have a dedicated and passionate faculty and staff who are committed to providing a high-quality educational experience for our students. Our team of educators, administrators, and support staff work together to foster a supportive and inspiring learning environment where students can thrive.</p>
+                    
+                    <!-- Headmaster Section -->
+                    <div class="headmaster-profile">
+                        <img src="https://via.placeholder.com/600x400" alt="Headmaster Mr. Samuel Nkurunziza">
+                        <h3>Mr. Samuel Nkurunziza</h3>
+                        <p>Headmaster</p>
+                        <p>Mr. Nkurunziza has over 20 years of experience in education and is dedicated to fostering a positive learning environment for all students.</p>
+                    </div>
+
+                    <!-- Deans Section -->
+                    <div class="deans-container">
+                        <div class="dean-profile">
+                            <img src="https://via.placeholder.com/300x300" alt="Dean of Studies">
+                            <h3>Mr. Bigiyobyenda Innocent</h3>
+                            <p>Dean of Studies</p>
+                            <p>[Brief Description of Dean's Experience or Role]</p>
+                        </div>
+
+                        <div class="dean-profile">
+                            <img src="https://via.placeholder.com/300x300" alt="Dean of Discipline">
+                            <h3>Mr. Murara Jacob</h3>
+                            <p>Dean of Discipline</p>
+                            <p>[Brief Description of Dean's Experience or Role]</p>
+                        </div>
+
+                        <div class="dean-profile">
+                            <img src="https://via.placeholder.com/300x300" alt="Deputy Dean of Discipline">
+                            <h3>Mrs. Tabu Illumine</h3>
+                            <p>Deputy Dean of Discipline</p>
+                            <p>[Brief Description of Deputy Dean's Experience or Role]</p>
+                        </div>
+                    </div>
+
+                    <!-- Group Staff Photo -->
+                    <div class="group-photo">
+                        <h3>Our Staff Team</h3>
+                        <img src="https://via.placeholder.com/1200x600" alt="Group Photo of Staff">
+                        <p>This is a group photo of our dedicated faculty and staff, showcasing our commitment to quality education.</p>
+                    </div>
+
+                    <p>This is just a sample of our amazing faculty and staff. To learn more about our teachers and staff, please visit [Link to Staff Directory Page] or contact our school office.</p>
+
+                    <!-- Newsletter Section -->
+                    <section id="newsletter" class="newsletter">
+                        <h3>Stay Updated!</h3>
+                        <p>Subscribe to our newsletter to receive the latest news, updates, and events happening at Kagarama Secondary School.</p>
+                        <form id="newsletter-form" action="path/to/your/newsletter_script.php" method="POST"> <!-- Update this path -->
+                            <input type="email" name="email" placeholder="Enter your email" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </section>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p class="text-center">© 2023 Kagarama Secondary School</p>
+                <div class="social-media text-center">
+                    <a href="#" class="facebook">Facebook</a>
+                    <a href="#" class="twitter">Twitter</a>
+                    <a href="#" class="instagram">Instagram</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
